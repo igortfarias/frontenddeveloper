@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Front-end development projects by Igor Farias.">
+  <title>Igor's Front-End Projects</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #0d1117; color: #e6edf3; }
+    main { width: min(900px, 100% - 40px); margin: 0 auto; padding: 80px 0; }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: 0 0 12px; }
+    p { color: #9da7b3; line-height: 1.6; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin-top: 36px; }
+    .project { display: block; padding: 28px; background: #161b22; border: 1px solid #30363d; border-radius: 14px; text-decoration: none; color: inherit; transition: border-color .2s, transform .2s; }
+    .project:hover, .project:focus-visible { border-color: #58a6ff; transform: translateY(-3px); }
+    .project h2 { margin: 0 0 10px; font-size: 1.25rem; }
+    .project p { margin: 0; }
+    footer { margin-top: 48px; font-size: .9rem; }
+    footer a { color: #79c0ff; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Front-End Projects</h1>
+    <p>A collection of HTML, CSS, and JavaScript projects by Igor Farias.</p>
+    <section class="projects" aria-label="Projects">
+      <a class="project" href="./e_business_card/">
+        <h2>Business Card ↗</h2>
+        <p>A simple business card page built with HTML and CSS.</p>
+      </a>
+      <a class="project" href="./e_commerce/">
+        <h2>E-Commerce ↗</h2>
+        <p>An e-commerce project using HTML, CSS, and JavaScript.</p>
+      </a>
+      <a class="project" href="./e_portfolio/">
+        <h2>Portfolio ↗</h2>
+        <p>A personal portfolio project.</p>
+      </a>
+    </section>
+    <footer><a href="https://github.com/igortfarias/frontenddeveloper">View repository on GitHub</a></footer>
+  </main>
+</body>
+</html>
