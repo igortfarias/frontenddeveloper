@@ -8,7 +8,7 @@
   <title>Library</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -17,9 +17,9 @@
       <div class="nav__container">
         <img class="logo" src="./assets/Library.svg" alt="">
         <ul class="nav__links">
-          <li><a href="#" class="nav__link">Home</a></li>
-          <li><a href="#" class="nav__link">Contact</a></li>
-          <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+          <li><a href="#landing" class="nav__link">Home</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+          <li><a href="#features" class="nav__link nav__link--primary">Books</a></li>
         </ul>
         <button class="btn__menu" onclick="openMenu()">
           <i class="fas fa-bars"></i>
@@ -30,13 +30,13 @@
           </button>
           <ul class="menu__links">
             <li class="menu__list">
-              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+              <a href="#landing" class="menu__link" onclick="closeMenu()">Home</a>
             </li>
             <li class="menu__list">
               <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
             </li>
             <li class="menu__list">
-              <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+              <a href="#contact" class="menu__link" onclick="closeMenu()">Contact</a>
             </li>
           </ul>
         </div>
@@ -47,9 +47,7 @@
         <div class="header__description">
           <h1>America's most awarded online library platform</h1>
           <h2>Find your dream book with <span class="purple">Library</span></h2>
-          <a href="#features">
-            <button class="btn">Browse books</button>
-          </a>
+          <a href="#features" class="btn">Browse books</a>
         </div>
         <figure class="header__img--wrapper">
           <img src="./assets/Undraw_Books.svg" alt="">
@@ -112,8 +110,8 @@
           </h2>
           <div class="books">
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/crack the coding interview.png" alt="">
+              <figure class="book__img--wrapper" data-cover="Cracking the Coding Interview">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for Cracking the Coding Interview" loading="lazy" data-title="Cracking the Coding Interview">
               </figure>
               <div class="book__title">
                 Crack the Coding Interview
@@ -130,8 +128,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/atomic habits.jpg" alt="">
+              <figure class="book__img--wrapper" data-cover="Atomic Habits">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for Atomic Habits" loading="lazy" data-title="Atomic Habits">
               </figure>
               <div class="book__title">
                 Atomic Habits
@@ -148,8 +146,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/david goggins.jpeg" alt="">
+              <figure class="book__img--wrapper" data-cover="Can't Hurt Me">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for Can't Hurt Me" loading="lazy" data-title="Can't Hurt Me">
               </figure>
               <div class="book__title">
                 Can't Hurt Me
@@ -166,8 +164,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/deep work.jpeg" alt="">
+              <figure class="book__img--wrapper" data-cover="Deep Work">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for Deep Work" loading="lazy" data-title="Deep Work">
               </figure>
               <div class="book__title">
                 Deep Work
@@ -192,12 +190,12 @@
       <div class="container">
         <div class="row">
           <h2 class="section__title">
-            Featured <span class="purple">Books</span>
+            Recently Added <span class="purple">Books</span>
           </h2>
           <div class="books">
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-1.jpeg" alt="">
+              <figure class="book__img--wrapper" data-cover="The 10X Rule">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for The 10X Rule" loading="lazy" data-title="The 10X Rule">
               </figure>
               <div class="book__title">
                 The 10X Rule
@@ -214,8 +212,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-2.jpeg" alt="">
+              <figure class="book__img--wrapper" data-cover="Be Obsessed Or Be Average">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for Be Obsessed Or Be Average" loading="lazy" data-title="Be Obsessed Or Be Average">
               </figure>
               <div class="book__title">
                 Be Obsessed Or Be Average
@@ -232,8 +230,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-3.jpeg" alt="">
+              <figure class="book__img--wrapper" data-cover="Rich Dad Poor Dad">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for Rich Dad Poor Dad" loading="lazy" data-title="Rich Dad Poor Dad">
               </figure>
               <div class="book__title">
                 Rich Dad Poor Dad
@@ -250,8 +248,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-4.jpeg" alt="">
+              <figure class="book__img--wrapper" data-cover="Cashflow Quadrant">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for Cashflow Quadrant" loading="lazy" data-title="Cashflow Quadrant">
               </figure>
               <div class="book__title">
                 Cashflow Quadrant
@@ -268,8 +266,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-5.jpeg" alt="">
+              <figure class="book__img--wrapper" data-cover="48 Laws of Power">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for 48 Laws of Power" loading="lazy" data-title="48 Laws of Power">
               </figure>
               <div class="book__title">
                 48 Laws of Power
@@ -286,8 +284,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-6.jpeg" alt="">
+              <figure class="book__img--wrapper" data-cover="The 5 Second Rule">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for The 5 Second Rule" loading="lazy" data-title="The 5 Second Rule">
               </figure>
               <div class="book__title">
                 The 5 Second Rule
@@ -304,8 +302,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-7.jpg" alt="">
+              <figure class="book__img--wrapper" data-cover="Your Next Five Moves">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for Your Next Five Moves" loading="lazy" data-title="Your Next Five Moves">
               </figure>
               <div class="book__title">
                 Your Next Five Moves
@@ -322,8 +320,8 @@
               </div>
             </div>
             <div class="book">
-              <figure class="book__img--wrapper">
-                <img class="book__img" src="./assets/book-8.jpeg" alt="">
+              <figure class="book__img--wrapper" data-cover="Mastery">
+                <img class="book__img" src="./assets/cover.svg" alt="Illustrated placeholder cover for Mastery" loading="lazy" data-title="Mastery">
               </figure>
               <div class="book__title">
                 Mastery
@@ -348,15 +346,13 @@
       <div class="container">
         <div class="row row__column">
           <h2>Explore more <span class="purple">Books</span></h2>
-          <a href="#features">
-            <button class="btn">Browse books</button>
-          </a>
+          <a href="#features" class="btn">Browse books</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer id="contact">
     <div class="container">
       <div class="row row__column">
         <a href="#">
@@ -365,10 +361,10 @@
           </figure>
         </a>
         <div class="footer__list">
-          <a href="#" class="footer__link">Home</a>
-          <a class="footer__link no-cursor">About</a>
+          <a href="#landing" class="footer__link">Home</a>
+          <a href="#highlights" class="footer__link">About</a>
           <a href="#features" class="footer__link">Books</a>
-          <a class="footer__link no-cursor">Contact</a>
+          <a href="#contact" class="footer__link">Contact</a>
         </div>
         <div class="footer__copyright">Copyright &copy; 2021 Library</div>
       </div>
