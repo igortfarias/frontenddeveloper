@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+		<title>
+			Treact Landing Page | Front-End Recreation
+		</title>
+		<link href="style.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<section id="landing">
+			<nav>
+				<div class="row nav__row">
+					<div class="nav__brand">
+						<img alt="LOGO" class="nav__brand--icon" src="assets/logo.svg"/>
+						<div class="nav__brand--name">
+							Treact
+						</div>
+					</div>
+					<div class="nav__items">
+						<a class="nav__item" href="https://module-2-fp-example-website.vercel.app/#about">About</a>
+						<a class="nav__item" href="https://module-2-fp-example-website.vercel.app/#blog">Blog</a>
+						<a class="nav__item" href="https://module-2-fp-example-website.vercel.app/#pricing">Pricing</a>
+						<a class="nav__item" href="https://module-2-fp-example-website.vercel.app/#contact__us">Contact Us</a>
+						<a class="nav__item login" href="https://module-2-fp-example-website.vercel.app/#login">Login</a>
+						<a class="nav__item nav__item--cta" href="https://module-2-fp-example-website.vercel.app/#signup">Sign Up</a>
+					</div>
+					<button class="btn__menu" onclick="openMenu()">
+						<svg class="btn__menu--svg" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<line x1="3" x2="21" y1="12" y2="12">
+							</line>
+							<line x1="3" x2="21" y1="6" y2="6">
+							</line>
+							<line x1="3" x2="21" y1="18" y2="18">
+							</line>
+						</svg>
+					</button>
+				</div>
+			</nav>
+			<div class="menu">
+				<button class="btn__menu btn__menu--close" onclick="closeMenu()">
+					<svg class="light___StyledCloseIcon-lj69nl-14 fASujC" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<line x1="18" x2="6" y1="6" y2="18">
+						</line>
+						<line x1="6" x2="18" y1="6" y2="18">
+						</line>
+					</svg>
+				</button>
+				<div class="menu__links">
+					<a class="menu__link" href="https://module-2-fp-example-website.vercel.app/#about" onclick="closeMenu()">About</a>
+					<a class="menu__link" href="https://module-2-fp-example-website.vercel.app/#blog" onclick="closeMenu()">Blog</a>
+					<a class="menu__link" href="https://module-2-fp-example-website.vercel.app/#pricing" onclick="closeMenu()">Pricing</a>
+					<a class="menu__link" href="https://module-2-fp-example-website.vercel.app/#contact__us" onclick="closeMenu()">Contact Us</a>
+					<a class="menu__link" href="https://module-2-fp-example-website.vercel.app/#login" onclick="closeMenu()">Login</a>
+					<a class="menu__link menu__link--primary" href="https://module-2-fp-example-website.vercel.app/#signup" onclick="closeMenu()">Sign up</a>
+				</div>
+			</div>
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="header__intro">
+							<h1>
+								Beautiful React Templates
+								<span class="purple">
+									for you.
+								</span>
+							</h1>
+							<p class="header__intro--text">
+								Our templates are easy to setup, understand and customize. Fully
+																modular components with a variety of pages and components.
+							</p>
+							<div class="header__signup">
+								<input class="header__signup--input" placeholder="Your E-mail Address" type="text"/>
+								<button class="header__signup--button">
+									Get Started
+								</button>
+							</div>
+							<p class="header__customers--title">
+								OUR TRUSTED CUSTOMERS
+							</p>
+							<img class="header__customers" src="assets/customer-logos.png"/>
+						</div>
+						<figure class="header__img--wrapper">
+							<img class="header__visual" src="assets/hero-art.svg"/>
+						</figure>
+					</div>
+				</div>
+			</header>
+		</section>
+		<main>
+			<section id="features">
+				<div class="container">
+					<div class="row__narrow">
+						<h4 class="section__tag">
+							FEATURES
+						</h4>
+						<h2 class="section__title">
+							We Have Amazing
+							<span class="purple">
+								Service.
+							</span>
+						</h2>
+						<div class="section__para">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+														eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="features">
+							<div class="feature">
+								<div class="feature__content">
+									<figure class="feature__icon--frame">
+										<img class="feature__icon" src="assets/security.svg"/>
+									</figure>
+									<div class="feature__copy">
+										<h2 class="feature__heading">
+											Secure
+										</h2>
+										<p class="feature__description">
+											Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+																						quis nostrud.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="feature__content">
+									<figure class="feature__icon--frame">
+										<img class="feature__icon" src="assets/support.svg"/>
+									</figure>
+									<div class="feature__copy">
+										<h2 class="feature__heading">
+											24/7 Support
+										</h2>
+										<p class="feature__description">
+											Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+																						quis nostrud.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="feature__content">
+									<figure class="feature__icon--frame">
+										<img class="feature__icon" src="assets/customize.svg"/>
+									</figure>
+									<div class="feature__copy">
+										<h2 class="feature__heading">
+											Customizable
+										</h2>
+										<p class="feature__description">
+											Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+																						quis nostrud.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="feature__content">
+									<figure class="feature__icon--frame">
+										<img class="feature__icon" src="assets/reliable.svg"/>
+									</figure>
+									<div class="feature__copy">
+										<h2 class="feature__heading">
+											Reliable
+										</h2>
+										<p class="feature__description">
+											Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+																						quis nostrud.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="feature__content">
+									<figure class="feature__icon--frame">
+										<img class="feature__icon" src="assets/speed.svg"/>
+									</figure>
+									<div class="feature__copy">
+										<h2 class="feature__heading">
+											Fast
+										</h2>
+										<p class="feature__description">
+											Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+																						quis nostrud.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="feature__content">
+									<figure class="feature__icon--frame">
+										<img class="feature__icon" src="assets/simple.svg"/>
+									</figure>
+									<div class="feature__copy">
+										<h2 class="feature__heading">
+											Easy
+										</h2>
+										<p class="feature__description">
+											Lorem ipsum donor amet siti ceali ut enim ad minim veniam,
+																						quis nostrud.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="quality">
+				<div class="container">
+					<div class="row">
+						<div class="quality__description">
+							<div class="section__tag">
+								QUALITY WORK
+							</div>
+							<h2 class="section__title">
+								Designed &amp; Developed by
+								<span class="purple">
+									Profressionals.
+								</span>
+							</h2>
+							<p class="section__para">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+																quam cupiditate commodi qui excepturi laborum adipisci officiis,
+																corporis possimus. Reiciendis?
+							</p>
+							<button class="btn">
+								Learn More
+							</button>
+						</div>
+						<figure class="quality__img--wrapper">
+							<img class="quality__img" src="assets/dashboard-main.png"/>
+							<svg class="quality__grid" viewbox="0 0 1280 1280">
+								<path d="M55 33.5C44.5 37 35 47.6 32.8 58.3c-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 33.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.4 25.5 19.4 4.1 39.5-14.2 37.5-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM1207 33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM55 161.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 161.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.4 25.5 19.4 4.1 39.5-14.2 37.5-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 161.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 161.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 161.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 161.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 161.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 161.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 161.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM1207 161.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM55 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 289.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 417.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 545.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 673.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 801.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 801.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 801.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM439 801.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM567 801.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 801.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 801.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 801.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 801.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 801.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 929.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 929.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 929.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM439 929.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM567 929.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 929.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 929.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 929.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.5 25.5 19.3 4.1 39.4-14.2 37.4-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 929.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 929.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 1057.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM439 1057.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM567 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 1057.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM55 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1207 1185.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6z">
+								</path>
+							</svg>
+						</figure>
+					</div>
+				</div>
+			</section>
+			<section id="steps">
+				<div class="container">
+					<div class="row">
+						<figure class="steps__img--wrapper">
+							<img alt="Dashboard Screenshot" class="steps__img" src="assets/dashboard-secondary.png"/>
+							<svg class="steps__grid" viewbox="0 0 1280 1280" xmlns="http://www.w3.org/2000/svg">
+								<defs>
+									<path d="M55 33.5C44.5 37 35 47.6 32.8 58.3c-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM183 33.5c-15.1 5-25.3 21.6-22.2 36.2 2.5 11.9 13.6 23 25.4 25.5 19.4 4.1 39.5-14.2 37.5-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM311 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM439 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM567 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM695 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM823 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM951 33.5c-10.5 3.5-20 14.1-22.2 24.8-4.3 20.6 16.3 41.2 36.9 36.9 15.5-3.2 27.5-19 26-33.9-1.1-10.5-9-21.3-19-26.2-6.1-2.9-15.5-3.6-21.7-1.6zM1079 33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5zM1207 33.5c-10.5 3.5-20 14.1-22.2 24.8-2.5 11.7 3.2 24.4 14.2 31.9 10.7 7.4 22.9 7.5 33.7.3 17.7-11.8 20.1-33.8 5.3-48.5-8.5-8.6-20.7-11.9-31-8.5z" id="line-of-balls">
+									</path>
+								</defs>
+								<!-- Repeat the line 10 times with vertical spacing -->
+								<g fill="rgba(100, 21, 255, 0.15)">
+									<use href="#line-of-balls" transform="translate(0, 0)">
+									</use>
+									<use href="#line-of-balls" transform="translate(0, 100)">
+									</use>
+									<use href="#line-of-balls" transform="translate(0, 200)">
+									</use>
+									<use href="#line-of-balls" transform="translate(0, 300)">
+									</use>
+									<use href="#line-of-balls" transform="translate(0, 400)">
+									</use>
+									<use href="#line-of-balls" transform="translate(0, 500)">
+									</use>
+									<use href="#line-of-balls" transform="translate(0, 600)">
+									</use>
+									<use href="#line-of-balls" transform="translate(0, 700)">
+									</use>
+									<use href="#line-of-balls" transform="translate(0, 800)">
+									</use>
+									<use href="#line-of-balls" transform="translate(0, 900)">
+									</use>
+								</g>
+							</svg>
+						</figure>
+						<div class="steps__description">
+							<div class="section__tag">
+								STEPS
+							</div>
+							<h2 class="section__title">
+								Easy to
+								<span class="purple">
+									Get Started.
+								</span>
+							</h2>
+							<div class="steps__list">
+								<div class="step">
+									<div class="step__number">
+										01
+									</div>
+									<div class="step__description">
+										<div class="step__title">
+											Register
+										</div>
+										<p class="step__para">
+											Create an account with us using Google or Facebook.
+										</p>
+									</div>
+								</div>
+								<div class="step">
+									<div class="step__number">
+										02
+									</div>
+									<div class="step__description">
+										<div class="step__title">
+											Download
+										</div>
+										<p class="step__para">
+											Browse and Download the template that you like from the
+																						marketplace.
+										</p>
+									</div>
+								</div>
+								<div class="step">
+									<div class="step__number">
+										03
+									</div>
+									<div class="step__description">
+										<div class="step__title">
+											Run
+										</div>
+										<p class="step__para">
+											Follow the instructions to setup and customize the
+																						template to your needs.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="values">
+				<div class="container">
+					<div class="row">
+						<div class="values__description">
+							<div class="section__tag">
+								VALUES
+							</div>
+							<h2 class="section__title">
+								We Always Abide by Our
+								<span class="purple">
+									Principles.
+								</span>
+							</h2>
+							<div class="section__para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+																eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+																enim ad minim veniam, quis nostrud exercitation ullamco laboris
+																nisi ut aliquip ex ea commodo consequat.
+							</div>
+							<div class="values__list">
+								<div class="value">
+									<div class="value__title">
+										<figure class="value__img--wrapper">
+											<!-- TO GET THIS ICON GO TO https://feathericons.com -->
+											<svg class="value__img" fill="none" height="24" stroke="rgba(39, 103, 73, 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+												<line x1="12" x2="12" y1="1" y2="23">
+												</line>
+												<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6">
+												</path>
+											</svg>
+										</figure>
+										<div class="value__name">
+											Affordable
+										</div>
+									</div>
+									<div class="value__para">
+										We promise to offer you the best rate we can - at par with
+																				the industry standard.
+									</div>
+								</div>
+								<div class="value">
+									<div class="value__title">
+										<figure class="value__img--wrapper">
+											<!-- TO GET THIS ICON GO TO https://feathericons.com -->
+											<svg class="value__img" fill="none" height="24" stroke="rgba(155, 44, 44, 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+												<rect height="14" rx="2" ry="2" width="20" x="2" y="7">
+												</rect>
+												<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16">
+												</path>
+											</svg>
+										</figure>
+										<div class="value__name">
+											Professionalism
+										</div>
+									</div>
+									<div class="value__para">
+										We assure you that our templates are designed and created by
+																				professional designers.
+									</div>
+								</div>
+							</div>
+							<button class="btn">
+								Learn More
+							</button>
+						</div>
+						<img class="values__img" src="assets/prototype.svg"/>
+					</div>
+				</div>
+			</section>
+			<section id="pricing">
+				<div class="container">
+					<div class="row">
+						<div class="section__tag">
+							pricing
+						</div>
+						<h2 class="section__title">
+							Reasonable &amp; Flexible
+							<span class="purple">
+								Plans.
+							</span>
+						</h2>
+						<p class="section__para">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+														eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="plans">
+							<div class="plan">
+								<div class="plan__stripe">
+								</div>
+								<div class="plan__top">
+									<div class="plan__name">
+										PERSONAL
+									</div>
+									<div class="plan__price">
+										$17.99
+									</div>
+									<div class="plan__duration">
+										MONTHLY
+									</div>
+								</div>
+								<div class="plan__middle">
+									<div class="plan__target">
+										For Individuals
+									</div>
+									<p class="plan__feature">
+										30 Templates
+									</p>
+									<p class="plan__feature">
+										7 Landing Pages
+									</p>
+									<p class="plan__feature">
+										12 Internal Pages
+									</p>
+									<p class="plan__feature">
+										Basic Assistance
+									</p>
+								</div>
+								<div class="plan__bottom">
+									<button class="plan__action">
+										buy now
+									</button>
+								</div>
+							</div>
+							<div class="plan">
+								<div class="plan__stripe">
+								</div>
+								<div class="plan__top">
+									<div class="plan__name">
+										BUSINESS
+									</div>
+									<div class="plan__price">
+										$37.99
+									</div>
+									<div class="plan__duration">
+										MONTHLY
+									</div>
+								</div>
+								<div class="plan__middle">
+									<div class="plan__target">
+										For Small Businesses
+									</div>
+									<p class="plan__feature">
+										60 Templates
+									</p>
+									<p class="plan__feature">
+										15 Landing Pages
+									</p>
+									<p class="plan__feature">
+										22 Internal Pages
+									</p>
+									<p class="plan__feature">
+										Priority Assistance
+									</p>
+								</div>
+								<div class="plan__bottom">
+									<button class="plan__action">
+										buy now
+									</button>
+								</div>
+							</div>
+							<div class="plan">
+								<div class="plan__stripe">
+								</div>
+								<div class="plan__top">
+									<div class="plan__name">
+										ENTERPRISE
+									</div>
+									<div class="plan__price">
+										$57.99
+									</div>
+									<div class="plan__duration">
+										MONTHLY
+									</div>
+								</div>
+								<div class="plan__middle">
+									<div class="plan__target">
+										For Large Companies
+									</div>
+									<p class="plan__feature">
+										90 Templates
+									</p>
+									<p class="plan__feature">
+										27 Landing Pages
+									</p>
+									<p class="plan__feature">
+										37 Internal Pages
+									</p>
+									<p class="plan__feature">
+										Personal Assistance
+									</p>
+								</div>
+								<div class="plan__bottom">
+									<button class="plan__action">
+										buy now
+									</button>
+								</div>
+							</div>
+							<svg class="plans__blob" height="600" viewbox="0 0 600 600" width="600" xmlns="http://www.w3.org/2000/svg">
+								<g transform="translate(300,300)">
+									<path d="M82,-98.3C129.8,-57.7,208.2,-54.1,229.6,-26.6C251.1,1,215.6,52.5,172.9,74.9C130.2,97.2,80.3,90.4,37.8,107.5C-4.8,124.7,-40,165.7,-63.3,162.3C-86.5,158.8,-97.8,110.9,-109.3,72.2C-120.7,33.5,-132.2,4.1,-140.1,-37.4C-147.9,-79,-152.1,-132.6,-128.1,-177.3C-104.1,-222.1,-52.1,-258,-17.5,-237.2C17.1,-216.4,34.3,-138.9,82,-98.3Z" fill="#FFB4BC">
+									</path>
+								</g>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="testimonials">
+				<div class="container">
+					<div class="row">
+						<img alt="" class="testimonials__img" src="assets/values-art.svg"/>
+						<div class="testimonials__description">
+							<div class="section__tag">
+								testimonials
+							</div>
+							<h2 class="section__title">
+								Our Clients
+								<span class="purple">
+									Love Us.
+								</span>
+							</h2>
+							<p class="section__para">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+																eiusmod tempor incididunt ut labore et dolore magna aliqua enim
+																ad minim veniam.
+							</p>
+							<div class="testimonial">
+								<div class="testimonial__rating">
+									<i aria-hidden="true" class="fas fa-star">
+									</i>
+									<i aria-hidden="true" class="fas fa-star">
+									</i>
+									<i aria-hidden="true" class="fas fa-star">
+									</i>
+									<i aria-hidden="true" class="fas fa-star">
+									</i>
+									<i aria-hidden="true" class="fas fa-star">
+									</i>
+								</div>
+								<h3 class="testimonial__title">
+									Amazing User Experience
+								</h3>
+								<p class="testimonial__para">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse
+																		cillum dolore eu fugiat nulla pariatur. Excepteur sint
+																		occaecat cupidatat non proident, sunt in culpa qui officia.
+																		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+																		do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																		Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+								</p>
+								<div class="testimonial__bottom">
+									<div class="testimonial__profile">
+										<img class="testimonial__img" src="assets/customer-photo.jpg"/>
+										<div class="testimonial__details">
+											<div class="testimonial__name">
+												Charlotte Hale
+											</div>
+											<div class="testimonial__role">
+												Director, Delos Inc.
+											</div>
+										</div>
+									</div>
+									<div class="testimonial__buttons">
+										<button class="testimonial__button">
+											<svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24">
+												<path d="M10 19l-7-7m0 0l7-7m-7 7h18">
+												</path>
+											</svg>
+										</button>
+										<div class="divider">
+										</div>
+										<button class="testimonial__button">
+											<svg fill="none" stroke="rgb(100,21,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewbox="0 0 24 24">
+												<path d="M14 5l7 7m0 0l-7 7m7-7H3">
+												</path>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="start">
+				<div class="container">
+					<div class="row">
+						<svg class="start__blob--1" viewbox="0 0 600 600">
+							<g transform="translate(300,300)">
+								<path d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" fill="rgb(80,17,204)">
+								</path>
+							</g>
+						</svg>
+						<svg class="start__blob--2" viewbox="0 0 600 600">
+							<g transform="translate(300,300)">
+								<path d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" fill="rgb(80,17,204)">
+								</path>
+							</g>
+						</svg>
+						<div class="start__container">
+							<div class="start__row">
+								<div class="start__title">
+									Developers all over the world are happily using Treact.
+								</div>
+								<div class="start__buttons">
+									<button class="start__button btn">
+										Get Started
+									</button>
+									<button class="start__button btn">
+										Contact Us
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<svg class="footer__blob--1" viewbox="0 0 600 600">
+				<g transform="translate(300,300)">
+					<path d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" fill="rgba(80,17,204)">
+					</path>
+				</g>
+			</svg>
+			<svg class="footer__blob--2" viewbox="0 0 600 600">
+				<g transform="translate(300,300)">
+					<path d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" fill="rgba(80,17,204)">
+					</path>
+				</g>
+			</svg>
+			<div class="row footer__row">
+				<div class="footer__grid">
+					<div class="footer__group">
+						<div class="footer__group--heading">
+							MAIN
+						</div>
+						<a class="footer__group--link">Blog</a>
+						<a class="footer__group--link">FAQs</a>
+						<a class="footer__group--link">Support</a>
+						<a class="footer__group--link">About Us</a>
+					</div>
+					<div class="footer__group">
+						<div class="footer__group--heading">
+							PRODUCT
+						</div>
+						<a class="footer__group--link">Log In</a>
+						<a class="footer__group--link">Personal</a>
+						<a class="footer__group--link">Business</a>
+						<a class="footer__group--link">Team</a>
+					</div>
+					<div class="footer__group">
+						<div class="footer__group--heading">
+							PRESS
+						</div>
+						<a class="footer__group--link">Logos</a>
+						<a class="footer__group--link">Events</a>
+						<a class="footer__group--link">Stories</a>
+						<a class="footer__group--link">Office</a>
+					</div>
+					<div class="footer__group">
+						<div class="footer__group--heading">
+							TEAM
+						</div>
+						<a class="footer__group--link">Career</a>
+						<a class="footer__group--link">Founders</a>
+						<a class="footer__group--link">Culture</a>
+						<a class="footer__group--link">Onboarding</a>
+					</div>
+					<div class="footer__group">
+						<div class="footer__group--heading">
+							LEGAL
+						</div>
+						<a class="footer__group--link">GDPR</a>
+						<a class="footer__group--link">Privacy Policy</a>
+						<a class="footer__group--link">Terms of Service</a>
+						<a class="footer__group--link">Disclaimer</a>
+					</div>
+				</div>
+				<div class="footer__divider">
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__logo">
+						<img alt="" class="footer__logo--img" src="assets/logo-white.svg"/>
+						<h5 class="footer__logo--text">
+							Treact Inc.
+						</h5>
+					</div>
+					<div class="footer__copyright">
+						© 2018 Treact Inc. All Rights Reserved.
+					</div>
+					<div class="footer__socials">
+						<a class="footer__social--link">
+							<svg fill="currentColor" viewbox="0 0 24 24">
+								<path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z">
+								</path>
+							</svg>
+						</a>
+						<a class="footer__social--link">
+							<svg fill="currentColor" viewbox="0 0 24 24">
+								<path d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z">
+								</path>
+							</svg>
+						</a>
+						<a class="footer__social--link">
+							<svg fill="currentColor" viewbox="0 0 24 24">
+								<path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z">
+								</path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="script.js">
+		</script>
+	</body>
+</html>
