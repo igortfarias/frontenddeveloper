@@ -452,3 +452,14 @@ footer {
 
 /* Book cover photos and self-contained feature icons */
 .highlight__img svg{width:42px;height:42px;display:block}.book__img--wrapper::after{content:none!important}.book__img--wrapper{background:#f4f0f9;align-items:center;justify-content:center}.book__img{object-fit:contain;background:#f4f0f9}.highlight__img{flex-shrink:0}
+
+/* Refreshed design: retains the original Library layout and icon artwork */
+:root{--library-purple:#7342d6;--library-purple-dark:#5930ad}
+.header__description h2{line-height:1.4}
+.highlight__img{border-radius:14px;background:#f8f4ff;transition:transform .2s ease,box-shadow .2s ease}
+.highlight:hover .highlight__img{transform:translateY(-4px);box-shadow:0 8px 24px rgba(115,66,214,.13)}
+.book__img--wrapper{border-radius:10px}
+.book__img{transition:transform .25s ease}
+.btn{border-radius:8px;transition:background-color .2s ease,transform .2s ease}
+.btn:hover{background-color:var(--library-purple-dark);transform:translateY(-2px)}
+@media(max-width:550px){.highlight{padding:0 12px}.highlight__wrapper{row-gap:24px}.header__description h2{font-size:22px}}
