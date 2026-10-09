@@ -463,3 +463,10 @@ footer {
 .btn{border-radius:8px;transition:background-color .2s ease,transform .2s ease}
 .btn:hover{background-color:var(--library-purple-dark);transform:translateY(-2px)}
 @media(max-width:550px){.highlight{padding:0 12px}.highlight__wrapper{row-gap:24px}.header__description h2{font-size:22px}}
+
+/* Align book cards with the refreshed ZIP layout */
+.book{transition:transform .2s ease}.book:hover{transform:translateY(-4px)}
+.book__img--wrapper{aspect-ratio:3/4;background:#f0eafb;border-radius:4px}
+.book__img{height:100%;max-height:none;object-fit:contain}
+.book__title{min-height:48px}
+@media(max-width:550px){.row{padding:0 16px}.footer__list{gap:8px}}
