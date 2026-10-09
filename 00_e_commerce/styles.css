@@ -460,3 +460,5 @@ a:focus-visible, button:focus-visible { outline: 3px solid #7342d6; outline-offs
 @media (max-width: 768px) { .book { padding: 14px; } }
 @media (max-width: 550px) { .row { padding: 0 16px; } .book { padding: 9px; } .book__title { font-size: 16px; } .footer__list { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .book, .book__img, .btn { transition: none; } }
+
+.highlight__img svg { width: 42px; height: 42px; display: block; }
